@@ -27,11 +27,33 @@ function setTurn(){
     }
 }
 
+//initializing function for second time or more
+function init(){
+    //clear the old values,turn,array,messages
+    turn = "";
+    grid =  [[0,0,0],[0,0,0],[0,0,0]];
+    boardMsg("");
+    $(".col").map(function() {
+        $(this).text("");
+    }).get();
+    hasWinner = 0;
+    moveCount=0;
+}
 
+//click event
+$("#playButton").click(function (){
 
-        boardMsg(playerName+" won the game!");
-        hasWinner = 1;
-        moveCount=0;
-        $("#playButton").text("Play again");
-        return true;
- 
+    if(hasWinner==1){
+        init();
+    }
+    //initalize the necessary values again.
+    player1Name = $("#player-1-inp").val();
+    player2Name = $("#player-2-inp").val();
+    //players set their names
+    if(player1Name=="" || player2Name==""){
+        alert("Please set player all the names.");
+        return;
+    }
+
+    setTurn();
+});
