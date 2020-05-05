@@ -11,52 +11,42 @@
             defer
         ></script>
     <script src="app.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>
     <title>Tic_Tac_Toe_GAME</title>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1> 
-    <div class="messages">
-        <div class="turn">
-            <table>
-                <tr>
-                    <td class="item1"></td>
-                    <td class="item2"></td>
-                    <td class="item3"></td>
-                </tr>
-                <tr>
-                    <td class="item4"></td>
-                    <td class="item5"></td>
-                    <td class="item6"></td>
-                </tr>
-                <tr>
-                    <td class="item7"></td>
-                    <td class="item8"></td>
-                    <td class="item9"></td>
-                </tr>
-
-            </table>
-        </div>
-    <br>
-    <input class="reset" type="button" value="Reset">
+    <h1>Welcome To Tic Tac Toe game</h1> 
+ 
+<div id="game-wrap">
+    
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
     </div>
 
-    
-     
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
 
-    
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
 
-    <!-- create div for return the win/lost massage -->
-    <!-- <div class="winning" id="winning">
-        <div data-winning-text> x wins</div>
-        <button id="restartButton">Restart</button> -->
-    
+</div>
 
-    
-
-
-
-
-
+<div id="panel">
+    <input type="text" id="player-1-inp" placeholder="Enter player 1">
+    <input type="text" id="player-2-inp" placeholder="Enter player 2">
+    <button id="playButton">Play!</button>
+    <h1 id="board"></h1>
+</div>
 
 
 
