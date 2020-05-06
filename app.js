@@ -68,7 +68,7 @@ $(".col").click(function (){
 
     var row = $(this).parent().index();
     var col = $(this).index();
-    //osition is taken
+    //position is taken
     if(grid[row][col]!==0){
         alert("This position is taken. Please try other position.");
         return;

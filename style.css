@@ -3,89 +3,103 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     }
+ h1{
+    color: rgb(250, 6, 6);
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;   
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+}
     
-    #game-wrap{
-        width: 560px;
-        height: 480px;
-        margin-left: 867px;
-        background: rgb(101, 100, 100);
-        margin-top: -80px;
-        border-left: 5px solid gray;
-    }
+#game-wrap{
+    width: 573px;
+    height: 510px;
+    margin-left: 855px;
+    margin-bottom: 0px;
+    background: rgb(101, 100, 100);
+    margin-top: -120px;
+    border-left: 5px solid gray;
+}
     
-    .row{
-        width: 100%;
-        height: 150px;
-    }
-    .col{
-        width: 32%;
-        height: 145.5px;
-        border: 3px solid white;
-        float: left;
-        text-align: center;
-        font-size: 150px;
-        font-family: helvetica;
-        color: rgb(70, 201, 224);
-        cursor: pointer;
-    }
-    .matched{
-        color: maroon;
-    }
-    .player-1-color{
-        color: maroon;
-    }
-    .col:nth-child(1){
-        border-left: none;
-    }
-    .col:nth-child(3){
-        border-right: none;
-    }
+.row{
+    width: 100%;
+    height: 150px;
+}
+.col{
+    width: 32%;
+    height: 145.5px;
+    border: 3px solid rgb(70, 201, 224);
+    float: left;
+    text-align: center;
+    font-size: 120px;
+    color: rgb(70, 201, 224);
+    cursor: pointer;
+}
+.matched{
+    color: maroon;
+}
+.player-1-color{
+    color: maroon;
+}
+.col:nth-child(1){
+    border-left: none;
+}
+.col:nth-child(3){
+    border-right: none;
+}
     
-    .row:nth-child(1) .col{
-        border-top: none;
-        margin-top: 3px;
-    }
-    .row:nth-child(3) .col{
-        border-bottom: none;
-        margin-bottom: 3px;
-    }
-    #panel{
-        width: 530px;
-        padding-left: 30px;
-        padding-top: 25px;
-        padding-bottom: 250px;
-        margin-left: 867px;
-        background-color: rgb(70, 201, 224);
-        border-left: 5px solid gray;
-       
-    }
-    #board{
-        font-size: 50px;
-        font-family: helvetica;
-        color: whitesmoke;
-        margin-top: 3px;
-    }
+.row:nth-child(1) .col{
+    border-top: none;
+    margin-top: 3px;
+}
+.row:nth-child(3) .col{
+    border-bottom: none;
+    margin-bottom: 3px;
+}
+#panel{
+    width: 563px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 250px;
+    margin-left: 855px;
+    margin-top: -55px;
+    background-color: rgb(70, 201, 224);
+    border-left: 5px solid gray;
+  
+}
+#board{
+    font-size: 50px;
+    color: rgb(250, 6, 6);
+    margin-top: 3px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+}
 
-    #player-2-inp , #player-1-inp{
-        padding: 5px;
-        margin: 5px;
-        font-size: medium;
+#player-2-inp , #player-1-inp{
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
 
-    }
-    #playButton{
-        font-size: x-large;
-        font-weight: bold;
-        padding: 10px;
-        margin-left: 10px;
-        color: red;
-        border: 5px solid gray;
-        border-radius: 50%;
-        background-color: rgb(101, 100, 100);;
+}
+#playButton{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    color: red;
+    border: 5px solid gray;
+    border-radius: 50%;
+    background-color: rgb(101, 100, 100);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
 
-    }
+}
 
-    h1{
-        color: rgb(250, 6, 6);
-        font-size: xx-large;
-        font-weight: bold;
-    }
+   
