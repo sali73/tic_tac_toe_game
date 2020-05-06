@@ -14,12 +14,12 @@ body{
 }
     
 #game-wrap{
-    width: 573px;
+    width: 594px;
     height: 510px;
-    margin-left: 855px;
+    margin-left: 830px;
     margin-bottom: 0px;
     background: rgb(101, 100, 100);
-    margin-top: -130px;
+    margin-top: -140px;
     border-left: 5px solid gray;
 }
     
@@ -37,12 +37,7 @@ body{
     color: rgb(70, 201, 224);
     cursor: pointer;
 }
-.matched{
-    color: maroon;
-}
-.player-1-color{
-    color: maroon;
-}
+
 .col:nth-child(1){
     border-left: none;
 }
@@ -59,18 +54,18 @@ body{
     margin-bottom: 3px;
 }
 #panel{
-    width: 563px;
+    width: 586px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 250px;
-    margin-left: 855px;
+    margin-left: 830px;
     margin-top: -55px;
     background-color: rgb(70, 201, 224);
     border-left: 5px solid gray;
   
 }
 #board{
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(250, 6, 6);
     margin-top: 3px;
     font-family: 'Open Sans Condensed', sans-serif;
