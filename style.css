@@ -1,22 +1,24 @@
 body{
-    background-image: url(8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
     }
- h1{
-    color: rgb(250, 6, 6);
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 40px;
-    font-family: 'Gloria Hallelujah', cursive;
+ .leftSide{
+     width: 900px;
+     height: 820px;
+     background-image: url("https://i.imgur.com/8RVrveu.png");
+     background-repeat: no-repeat;
+     background-size: cover;
 }
+ .leftSide > h1 {
+     color: rgb(250, 6, 6);
+     font-size: 40px;
+     font-weight: bold;
+     font-family: 'Gloria Hallelujah', cursive;
+     padding-left: 20px;
+ }
 #game-wrap{
     width: 594px;
     height: 510px;
-    margin-left: 830px;
-    margin-bottom: 0px;
     background: rgb(101, 100, 100);
-    margin-top: -140px;
     border-left: 5px solid gray;
 }
 .row{
@@ -29,7 +31,7 @@ body{
     border: 3px solid rgb(70, 201, 224);
     float: left;
     text-align: center;
-    font-size: 120px;
+    font-size: 110px;
     color: rgb(70, 201, 224);
     cursor: pointer;
 }
@@ -52,7 +54,6 @@ body{
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 250px;
-    margin-left: 830px;
     margin-top: -55px;
     background-color: rgb(70, 201, 224);
     border-left: 5px solid gray;
@@ -67,6 +68,7 @@ body{
     padding: 5px;
     margin: 5px;
     font-size: medium;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 #playButton{
     font-size: x-large;
