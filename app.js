@@ -1,6 +1,7 @@
 //player names and game turn
 var player1Name="" , player2Name="", turn = "";
 //array for mapping the moves of players
+//counting the total number of moves
 var grid =  [[0,0,0],[0,0,0],[0,0,0]];
 //variables for counting the total number of moves 
 var hasWinner = 0, moveCount=0;
@@ -9,8 +10,6 @@ var hasWinner = 0, moveCount=0;
 function boardMsg(x){
     return $("#board").text(x);
 }
-
-
 function setTurn(){
     //turn randomly for player
     var r = Math.floor((Math.random() * 2) + 1);
@@ -26,7 +25,6 @@ function setTurn(){
         boardMsg(player2Name+"'s turn now!");
     }
 }
-
 //initializing function for second time or more
 function init(){
     //clear the old values,turn,array,messages
@@ -39,10 +37,8 @@ function init(){
     hasWinner = 0;
     moveCount=0;
 }
-
 //click event
 $("#playButton").click(function (){
-
     if(hasWinner==1){
         init();
     }
@@ -54,7 +50,6 @@ $("#playButton").click(function (){
         alert("Please set player all the names.");
         return;
     }
-
     setTurn();
 });
 
@@ -65,7 +60,6 @@ $(".col").click(function (){
         alert("Please set player all the names.");
         return;
     }
-
     var row = $(this).parent().index();
     var col = $(this).index();
     //position is taken
@@ -78,7 +72,6 @@ $(".col").click(function (){
         alert("Please click play again");
         return;
     }
-
     //checking who is playing now
     if(turn==player1Name){
         moveCount++;
@@ -142,8 +135,6 @@ function winnerCheck(n,playerName){
 
         (grid[0][0]==n && grid[1][1]==n && grid[2][2]==n)||
         (grid[0][2]==n && grid[1][1]==n && grid[2][0]==n)
-
-
         ){
         // msg for winner with his name
         boardMsg(playerName+" won the game!");
